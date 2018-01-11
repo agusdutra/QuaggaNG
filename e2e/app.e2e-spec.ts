@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('quagga-module App', () => {
+describe('QuaggaNG App', () => {
   let page: AppPage;
 
   beforeEach(() => {
