@@ -121,41 +121,49 @@ Ejemplo de estructura del objeto result:
 Desde donde se utilice el componente, se le pueden pasar algunos Inputs para personalizarlo.
 
 - **styles:** Objeto que se le pasa para agregar estilos al cuadro de la cámara. Por defecto recibe: 
-``` {width: '345px', height: '150px'}; ``` 
+
+  ``` 
+  {width: '345px', height: '150px'}; 
+  ``` 
 
 - **config:** Objeto de configuración de QuaggaJS. Se le puede pasar todo el objeto para personalizar todas lass configuraciones de Quagga.
   El formato completo del objeto se puede obtener en la [documentación de QuaggaJS](https://github.com/serratus/quaggaJS) 
 
-Por defecto el objeto que recibe es: 
-``` 
-{
-    frequency: 2,
-    decoder: {
-      readers: this.readers,
-      multiple: false
-    },
-    locate: true,
-    locator: {
-      halfSample: false,
-      patchSize: 'medium',
-    },
-    inputStream: {
-      name: 'Live',
-      type: 'LiveStream',
-      target: document.querySelector('#interactive'),
-      constraints: {
-        facingMode: 'environment',
-      },
-    }
-  };
-  
-  ``` 
+   Por defecto el objeto que recibe es: 
+    ``` 
+    {
+        frequency: 2,
+        decoder: {
+          readers: this.readers,
+          multiple: false
+        },
+        locate: true,
+        locator: {
+          halfSample: false,
+          patchSize: 'medium',
+        },
+        inputStream: {
+          name: 'Live',
+          type: 'LiveStream',
+          target: document.querySelector('#interactive'),
+          constraints: {
+            facingMode: 'environment',
+          },
+        }
+      };
+      
+     ``` 
   
   - **readers:** Array de strings que representan los códigos de barra que va a leer el lector.
   Por defecto se envían:
+   
+    - 'upc_reader' 
+    - 'upc_e_reader' 
+    - 'ean_reader'
+    - 'code_128_reader'
+    - 'ean_8_reader'
+    - 'code_39_reader'
+    - 'code_39_vin_reader' 
+    - 'codabar_reader' 
+    - 'i2of5_reader' 
   
-  ```   ['upc_reader', 'upc_e_reader', 'ean_reader', 'code_128_reader',
-       'ean_8_reader', 'code_39_reader', 'code_39_vin_reader', 'codabar_reader', 'i2of5_reader'];  
-  ``` 
-  
- 
