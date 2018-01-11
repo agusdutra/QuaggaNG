@@ -1,0 +1,20 @@
+.video-camera {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+#interactive.viewport {
+  overflow: hidden;
+  z-index: -1;
+}
+
+.drawingBuffer {
+  margin-left: 15px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
