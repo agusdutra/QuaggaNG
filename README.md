@@ -7,10 +7,6 @@ Expone un componente QuaggaCamComponent, que es el que contiene la cámara para 
 
 1 - Agregar el módulo 
 
-```
-npm install quagga-ng
-```
-
 2 - Importar el módulo donde se vaya a usar: 
 ```
 @NgModule({

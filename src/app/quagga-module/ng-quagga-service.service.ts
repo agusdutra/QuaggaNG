@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Subject} from 'rxjs/Subject';
-
+import {Observable} from 'rxjs/Observable';
 /**
  * Servicio al cual se llama desde el componente de lectura para publicar resultados válidos de lectura
  * de códigos de barra.

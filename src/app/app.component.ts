@@ -24,10 +24,6 @@ export class AppComponent {
   styles = {width: '350px', height: '150px'};
 
 
-
-
-
-
   constructor(private barcodeScannerService: NgQuaggaService) {
     this.listOfBarcodes.push({format: 'Test', code: '12345', count: 0});
 
