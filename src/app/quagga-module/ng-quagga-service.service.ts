@@ -11,7 +11,7 @@ import {Subject} from 'rxjs/Subject';
  * adutra
  */
 @Injectable()
-export class QuaggaCamService {
+export class NgQuaggaService {
 
 
   private barCodeSubject = new Subject<any>();

@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { QuaggaCamService } from './quagga-cam-service.service';
+import { NgQuaggaService } from './ng-quagga-service.service';
 
-describe('QuaggaCamService', () => {
+describe('NgQuaggaService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [QuaggaCamService]
+      providers: [NgQuaggaService]
     });
   });
 
-  it('should be created', inject([QuaggaCamService], (service: QuaggaCamService) => {
+  it('should be created', inject([NgQuaggaService], (service: NgQuaggaService) => {
     expect(service).toBeTruthy();
   }));
 });

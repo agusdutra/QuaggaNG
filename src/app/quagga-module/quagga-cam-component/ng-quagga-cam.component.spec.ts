@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { QuaggaCamComponent } from './quagga-cam-component.component';
+import { NgQuaggaCamComponent } from './ng-quagga-cam.component';
 
-describe('QuaggaCamComponent', () => {
-  let component: QuaggaCamComponent;
-  let fixture: ComponentFixture<QuaggaCamComponent>;
+describe('NgQuaggaCamComponent', () => {
+  let component: NgQuaggaCamComponent;
+  let fixture: ComponentFixture<NgQuaggaCamComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ QuaggaCamComponent ]
+      declarations: [ NgQuaggaCamComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(QuaggaCamComponent);
+    fixture = TestBed.createComponent(NgQuaggaCamComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {QuaggaCamService} from './quagga-module/quagga-cam-service.service';
+import {NgQuaggaService} from './quagga-module/ng-quagga-service.service';
 
 @Component({
   selector: 'app-root',
@@ -22,14 +22,13 @@ export class AppComponent {
    * @type {{width: string; height: string}}
    */
   styles = {width: '350px', height: '150px'};
-  drawLines = true;
 
 
 
 
 
 
-  constructor(private barcodeScannerService: QuaggaCamService) {
+  constructor(private barcodeScannerService: NgQuaggaService) {
     this.listOfBarcodes.push({format: 'Test', code: '12345', count: 0});
 
     this.barcodeScannerService.scanResult().subscribe(data => this.addBarcode(data));

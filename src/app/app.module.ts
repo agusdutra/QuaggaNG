@@ -4,7 +4,7 @@ import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {FormsModule} from '@angular/forms'
-import {QuaggaCamModule} from './quagga-module/quagga-cam-module.module';
+import {NgQuaggaModule} from './quagga-module/ng-quagga-module';
 
 
 @NgModule({
@@ -12,7 +12,7 @@ import {QuaggaCamModule} from './quagga-module/quagga-cam-module.module';
     AppComponent
   ],
   imports: [
-    BrowserModule, QuaggaCamModule, FormsModule
+    BrowserModule, NgQuaggaModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

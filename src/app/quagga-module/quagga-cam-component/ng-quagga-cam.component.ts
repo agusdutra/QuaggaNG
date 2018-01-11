@@ -1,16 +1,16 @@
 import {Component, ElementRef, Input, OnInit, ViewChild} from '@angular/core';
-import {QuaggaCamService} from '../quagga-cam-service.service';
+import {NgQuaggaService} from '../ng-quagga-service.service';
 
 import Quagga from 'quagga';
 
 @Component({
   selector: 'app-quagga-cam-component',
-  templateUrl: './quagga-cam-component.component.html',
-  styleUrls: ['./quagga-cam-component.component.css']
+  templateUrl: './ng-quagga-cam.component.html',
+  styleUrls: ['./ng-quagga-cam.component.css']
 })
-export class QuaggaCamComponent implements OnInit {
+export class NgQuaggaCamComponent implements OnInit {
 
-  constructor(private quaggaCamService: QuaggaCamService) {
+  constructor(private quaggaCamService: NgQuaggaService) {
   }
 
   /** Input Definitions **/

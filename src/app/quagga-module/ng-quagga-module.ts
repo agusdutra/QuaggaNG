@@ -1,11 +1,11 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {QuaggaCamComponent} from './quagga-cam-component/quagga-cam-component.component';
-import {QuaggaCamService} from './quagga-cam-service.service';
+import {NgQuaggaCamComponent} from './quagga-cam-component/ng-quagga-cam.component';
+import {NgQuaggaService} from './ng-quagga-service.service';
 
 /**
  * Módulo que se exporta para poder utiliar el componente y los servicios como Módulo externo en otras aplicaciones.
- * Tiene como provider al QuaggaCamService y declara el QuaggaCamComponent.
+ * Tiene como provider al NgQuaggaService y declara el NgQuaggaCamComponent.
  * Exporta ambos para que puedan ser utilizados desde los módulos que lo importan.
  *
  * adutra.
@@ -14,9 +14,9 @@ import {QuaggaCamService} from './quagga-cam-service.service';
   imports: [
     CommonModule
   ],
-  providers: [QuaggaCamService],
-  declarations: [QuaggaCamComponent],
-  exports: [QuaggaCamComponent]
+  providers: [NgQuaggaService],
+  declarations: [NgQuaggaCamComponent],
+  exports: [NgQuaggaCamComponent]
 })
-export class QuaggaCamModule {
+export class NgQuaggaModule {
 }
